@@ -16,7 +16,14 @@ const bookingRoutes = require('./routes/bookings');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:3000',
+        'https://project-managment-wcvv.onrender.com'
+    ],
+    credentials: true
+}));
 app.use(express.json());
 
 // Routes
