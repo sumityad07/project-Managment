@@ -20,7 +20,7 @@ app.use(cors({
     origin: [
         'http://localhost:5173',
         'http://localhost:3000',
-        'https://project-managment-wcvv.onrender.com'
+        'https://project-managment-theta-six.vercel.app'
     ],
     credentials: true
 }));
